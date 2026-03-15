@@ -1,0 +1,14 @@
+# robots.txt para Proyecto de Unidad Nacional Relámpagos del Catatumbo
+# URL: https://tu-usuario.github.io/proyecto-relampagos/
+
+User-agent: *
+Allow: /
+
+# Evitar la indexación de archivos de configuración y documentación interna
+Disallow: /docs/
+Disallow: /js/
+Disallow: /css/
+Disallow: /.github/
+
+# Optimización para buscadores
+Sitemap: https://tu-usuario.github.io/proyecto-relampagos/sitemap.xml
