@@ -1,1 +1,17 @@
-sss
+# Dependencias
+node_modules/
+dist/
+build/
+
+# Archivos de Sistema
+.DS_Store
+Thumbs.db
+
+# Configuración Personal / Seguridad
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
