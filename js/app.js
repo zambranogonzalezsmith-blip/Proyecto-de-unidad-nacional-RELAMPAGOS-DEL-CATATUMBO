@@ -76,3 +76,28 @@ function configurarNavegacionElegante() {
         });
     });
 }
+
+/**
+ * PASO 3: Gestión del Formulario de Unidad
+ * Captura los datos de los voluntarios de manera segura.
+ */
+const formulario = document.getElementById('registroForm');
+if (formulario) {
+    formulario.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Simulación de procesamiento seguro
+        const datos = {
+            nombre: document.getElementById('nombre').value,
+            email: document.getElementById('correo').value,
+            area: document.getElementById('especialidad').value,
+            fecha: new Date().toISOString()
+        };
+
+        console.log("Registro captado:", datos);
+        
+        // Feedback visual elegante
+        formulario.style.display = 'none';
+        document.getElementById('mensajeExito').style.display = 'block';
+    });
+}
