@@ -3,105 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proyecto de Unidad Nacional Relámpagos del Catatumbo - Educación, Progreso y Justicia.">
     <title>Unidad Nacional | Relámpagos del Catatumbo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-    <img src="assets/catatumbo.jpg" alt="Logo Catatumbo" style="max-width: 180px; border-radius: 50%;">
-    <h1 style="letter-spacing: 3px;">RELÁMPAGOS DEL CATATUMBO</h1>
-    <p><i>Iluminando el camino de la Soberanía Identitaria</i></p>
-</header>
+    <header id="main-header">
+        <div class="header-content">
+            <img src="assets/catatumbo.jpg" alt="Logotipo Catatumbo" class="main-logo">
+            <h1>RELÁMPAGOS DEL CATATUMBO</h1>
+            <p class="tagline"><i>Iluminando el camino de la Soberanía Identitaria</i></p>
+        </div>
+    </header>
 
-<nav class="navbar">
-    <a href="index.html" style="color:white; text-decoration:none;">Inicio</a>
-    <div class="dropdown">
-        <button style="background:none; border:none; color:white; cursor:pointer; font-size:16px;">Ejes de Acción ▾</button>
-        <div class="dropdown-content">
-            <a href="#">Educación</a>
-            <a href="#">Progreso Económico</a>
-            <a href="#">Justicia Institucional</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <div class="dropdown">
+                <button class="dropbtn" aria-haspopup="true">Ejes de Acción ▾</button>
+                <div class="dropdown-content">
+                    <a href="#educacion">Educación</a>
+                    <a href="#progreso">Progreso Económico</a>
+                    <a href="#justicia">Justicia Institucional</a>
+                </div>
+            </div>
+            <a href="#registro" class="nav-link">Contacto</a>
         </div>
-    </div>
-    <a href="#" style="color:white; text-decoration:none;">Contacto</a>
-</nav>
+    </nav>
 
-<main>
-    <section style="text-align: center; padding: 50px;">
-        <h2>Pilares Fundamentales</h2>
-        <p>Una nación se construye sobre cimientos inamovibles.</p>
-    </section>
+    <main>
+        <section class="intro-section">
+            <h2>Pilares Fundamentales</h2>
+            <p class="subtitle">Una nación se construye sobre cimientos inamovibles de virtud y trabajo.</p>
+        </section>
 
-    <div class="pillars">
-        <div class="card">
-            <h3>📖 Educación</h3>
-            <p>Formación de excelencia para el renacer del pensamiento crítico venezolano.</p>
-        </div>
-        <div class="card">
-            <h3>📈 Progreso</h3>
-            <p>Estructuras sólidas para una economía próspera e independiente.</p>
-        </div>
-        <div class="card">
-            <h3>⚖️ Justicia</h3>
-            <p>Equidad legal y transparencia como garantía de libertad.</p>
-        </div>
-    </div>
-<main>
-    <section style="text-align: center; padding: 80px 20px; max-width: 900px; margin: 0 auto;">
-        <h2 style="font-size: 2.5rem; letter-spacing: 2px; color: white;">Nuestra Visión</h2>
-        <p style="font-size: 1.2rem; color: #b0b0b0; font-style: italic;">
-            "Como el relámpago que hiende la noche, nuestra voluntad se alza para iluminar el porvenir de una nación que reclama su grandeza a través del saber y la justicia."
-        </p>
-    </section>
+        <section class="pillars">
+            <article class="card" id="educacion">
+                <div class="card-icon">📖</div>
+                <h3>Educación</h3>
+                <p>La formación de excelencia es el primer baluarte de la libertad. Nos enfocamos en el rescate del pensamiento crítico y la innovación para forjar ciudadanos capaces de sostener el futuro nacional.</p>
+            </article>
 
-    <div class="pillars">
-        <div class="card">
-            <h3>📖 Educación</h3>
-            <p>La educación es el primer baluarte de la libertad. Nos enfocamos en la restauración de la excelencia académica y la formación técnica de vanguardia, rescatando los valores cívicos y el pensamiento crítico para que cada ciudadano sea arquitecto de su propio destino.</p>
-        </div>
-        <div class="card">
-            <h3>📈 Progreso</h3>
-            <p>Entendemos el progreso como la evolución natural de un pueblo que respeta el esfuerzo individual y la propiedad. Promovemos una estructura económica moderna y eficiente, fundamentada en la soberanía productiva y el desarrollo tecnológico autosustentable.</p>
-        </div>
-        <div class="card">
-            <h3>⚖️ Justicia</h3>
-            <p>Pilar inamovible de la República. Abogamos por la transparencia institucional y la aplicación rigurosa de marcos legales que garanticen la igualdad ante la ley, protegiendo los derechos fundamentales bajo los más altos estándares de legalidad internacional.</p>
-        </div>
-    </div>
+            <article class="card" id="progreso">
+                <div class="card-icon">📈</div>
+                <h3>Progreso</h3>
+                <p>Entendemos la evolución como el resultado del respeto al esfuerzo individual. Promovemos una economía moderna, fundamentada en la productividad y el desarrollo tecnológico autosustentable.</p>
+            </article>
 
-    <section id="registro" style="text-align: center; padding: 100px 20px; background: linear-gradient(to bottom, #050505, #0a0a0a);">
-        <h2 style="color: white; margin-bottom: 20px;">Soberanía Identitaria</h2>
-        <p style="max-width: 700px; margin: 0 auto 40px; color: #888;">
-            El **Proyecto de Unidad Nacional Relámpagos del Catatumbo** convoca a las mentes más brillantes y comprometidas. Si crees en la reconstrucción nacional basada en la educación, el progreso y la justicia, es momento de sumar tu voluntad.
-        </p>
-        
-        <form id="registroForm" class="formulario-elegante">
-            <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
-            <input type="email" id="correo" placeholder="Correo Electrónico de Contacto" required>
-            <select id="especialidad" required>
-                <option value="" disabled selected>Área de Colaboración</option>
-                <option value="academica">Desarrollo Académico</option>
-                <option value="tecnica">Innovación y Tecnología</option>
-                <option value="legal">Asesoría Jurídica y Legal</option>
-                <option value="logistica">Logística y Organización</option>
-            </select>
-            <button type="submit">Consolidar Compromiso</button>
-        </form>
-        <p id="mensajeExito" style="display:none; color: var(--electric-blue); margin-top: 20px;">⚡ Su voluntad ha sido registrada con éxito.</p>
-    </section>
-</main>
+            <article class="card" id="justicia">
+                <div class="card-icon">⚖️</div>
+                <h3>Justicia</h3>
+                <p>Garantía de equidad institucional y transparencia. Abogamos por marcos legales rigurosos que protejan los derechos fundamentales bajo los más altos estándares de legalidad internacional.</p>
+            </article>
+        </section>
 
-<footer>
-    <p>&copy; 2026 Proyecto de Unidad Nacional Relámpagos del Catatumbo. Todos los derechos reservados.</p>
-    <div class="legal-seals">
-        <span>🛡️ GDPR Compliant</span> | 
-        <span>🔒 SSL Secure Encryption</span> | 
-        <span>🌐 UN Global Compact Principles</span> |
-        <span>⚖️ International Human Rights Standard</span>
-    </div>
-</footer>
-<script src="js/app.js"></script>
-    
+        <section id="registro" class="registration-area">
+            <h2>Únete al Movimiento</h2>
+            <form id="registroForm" class="formulario-elegante">
+                <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
+                <input type="email" id="correo" placeholder="Correo Electrónico" required>
+                <select id="especialidad" required>
+                    <option value="" disabled selected>Área de Colaboración</option>
+                    <option value="academica">Desarrollo Académico</option>
+                    <option value="tecnica">Innovación y Tecnología</option>
+                    <option value="legal">Asesoría Jurídica</option>
+                </select>
+                <button type="submit">Consolidar Compromiso</button>
+            </form>
+            <p id="mensajeExito" class="hidden">⚡ Su voluntad ha sido registrada con éxito.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Proyecto de Unidad Nacional Relámpagos del Catatumbo.</p>
+            <div class="legal-seals">
+                <span title="Cumplimiento de Privacidad Internacional">🛡️ GDPR Compliant</span>
+                <span title="Protocolos de Seguridad Activos">🔒 SSL Secure</span>
+                <span title="Principios de Cooperación Global">🌐 UN Global Compact</span>
+                <span title="Estándares de Derechos Humanos">⚖️ International Standards</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
