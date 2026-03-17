@@ -3,10 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Proyecto de Unidad Nacional Relámpagos del Catatumbo - Educación, Progreso y Justicia.">
+    <meta name="description" content="Relámpagos del Catatumbo: Estructura técnica y moral para el porvenir nacional basada en Educación, Progreso y Justicia.">
     <title>Unidad Nacional | Relámpagos del Catatumbo</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Relámpagos del Catatumbo | Unidad Nacional">
+    <meta property="og:description" content="Iluminando el camino de la Soberanía Identitaria.">
+    <meta property="og:image" content="assets/catatumbo.jpg">
+    <meta property="og:type" content="website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,12 +30,14 @@
             <div class="dropdown">
                 <button class="dropbtn" aria-haspopup="true">Ejes de Acción ▾</button>
                 <div class="dropdown-content">
-                    <a href="#educacion">Educación</a>
-                    <a href="#progreso">Progreso Económico</a>
-                    <a href="#justicia">Justicia Institucional</a>
+                    <a href="#educacion">Educación y Academia</a>
+                    <a href="#progreso">Progreso y Economía</a>
+                    <a href="#justicia">Justicia e Institución</a>
+                    <a href="#manifiesto-sec">Nuestro Manifiesto</a>
+                    <a href="#hoja-de-ruta">Hoja de Ruta</a>
                 </div>
             </div>
-            <a href="#registro" class="nav-link">Contacto</a>
+            <a href="#registro" class="nav-link">Unirse</a>
         </div>
     </nav>
 
@@ -44,32 +51,62 @@
             <article class="card" id="educacion">
                 <div class="card-icon">📖</div>
                 <h3>Educación</h3>
-                <p>La formación de excelencia es el primer baluarte de la libertad. Nos enfocamos en el rescate del pensamiento crítico y la innovación para forjar ciudadanos capaces de sostener el futuro nacional.</p>
+                <p>La formación de excelencia es el primer baluarte de la libertad. Rescatamos el pensamiento crítico para forjar ciudadanos capaces de sostener el futuro nacional.</p>
             </article>
 
             <article class="card" id="progreso">
                 <div class="card-icon">📈</div>
                 <h3>Progreso</h3>
-                <p>Entendemos la evolución como el resultado del respeto al esfuerzo individual. Promovemos una economía moderna, fundamentada en la productividad y el desarrollo tecnológico autosustentable.</p>
+                <p>La evolución como resultado del respeto al esfuerzo individual. Promovemos una economía moderna basada en la productividad y soberanía tecnológica.</p>
             </article>
 
             <article class="card" id="justicia">
                 <div class="card-icon">⚖️</div>
                 <h3>Justicia</h3>
-                <p>Garantía de equidad institucional y transparencia. Abogamos por marcos legales rigurosos que protejan los derechos fundamentales bajo los más altos estándares de legalidad internacional.</p>
+                <p>Garantía de equidad y transparencia institucional bajo los más altos estándares de legalidad internacional y seguridad jurídica.</p>
             </article>
+        </section>
+
+        <section id="manifiesto-sec" class="manifiesto-block">
+            <div class="manifiesto-content">
+                <h2>Nuestro Compromiso</h2>
+                <blockquote>
+                    "No somos una simple agrupación, somos la estructura técnica y moral que la nación requiere. Nuestra luz no es fugaz; es la persistencia del conocimiento aplicado para el orden social."
+                </blockquote>
+                <a href="docs/MANIFIESTO.md" target="_blank" class="text-link">Leer Manifiesto Estratégico Completo</a>
+            </div>
+        </section>
+
+        <section id="hoja-de-ruta" class="roadmap-section">
+            <h2 class="text-center">Hoja de Ruta Estructural</h2>
+            <div class="roadmap-container">
+                <div class="step">
+                    <span class="step-title">Fase I: Articulación</span>
+                    <p>Convocatoria de perfiles técnicos y consolidación de la identidad nacional.</p>
+                </div>
+                <div class="step">
+                    <span class="step-title">Fase II: Planificación</span>
+                    <p>Desarrollo de proyectos específicos en Educación, Economía y Justicia Institucional.</p>
+                </div>
+                <div class="step">
+                    <span class="step-title">Fase III: Ejecución</span>
+                    <p>Implementación de soluciones tecnológicas y sociales para la soberanía nacional.</p>
+                </div>
+            </div>
         </section>
 
         <section id="registro" class="registration-area">
             <h2>Únete al Movimiento</h2>
-            <form id="registroForm" class="formulario-elegante">
-                <input type="text" id="nombre" placeholder="Nombre y Apellido" required>
-                <input type="email" id="correo" placeholder="Correo Electrónico" required>
-                <select id="especialidad" required>
+            <p class="text-center">Firme su compromiso con el porvenir de la nación.</p>
+            <form id="registroForm" action="https://formspree.io/f/TU_ID_FORMSPREE" method="POST" class="formulario-elegante">
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
+                <input type="email" name="_replyto" id="correo" placeholder="Correo Electrónico" required>
+                <select name="especialidad" id="especialidad" required>
                     <option value="" disabled selected>Área de Colaboración</option>
                     <option value="academica">Desarrollo Académico</option>
                     <option value="tecnica">Innovación y Tecnología</option>
                     <option value="legal">Asesoría Jurídica</option>
+                    <option value="logistica">Logística y Organización</option>
                 </select>
                 <button type="submit">Consolidar Compromiso</button>
             </form>
